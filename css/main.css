@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+p {
+  color: hsl(228deg, 12%, 48%);
+}
+
+li {
+  list-style: none;
+}
+
+section {
+  background-color: hsl(30deg, 38%, 92%);
+}
+section .box {
+  width: 650px;
+  height: 450px;
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 10px;
+}
+section .box .img {
+  background-image: url(../images/image-product-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px 0px 0px 10px;
+}
+section .box .about .logo {
+  font-size: 1.2rem;
+  letter-spacing: 0.8rem;
+  font-weight: 500;
+}
+section .box .about h1 {
+  font-size: 3.2rem;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+}
+section .box .about div div:first-child {
+  color: hsl(158deg, 36%, 37%);
+  font-size: 3.2rem;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+}
+section .box .about div div:last-child {
+  color: hsl(228deg, 12%, 48%);
+  font-family: "Fraunces", serif;
+  text-decoration: line-through;
+}
+section .box .about button {
+  width: 100%;
+  font-size: 1.4rem;
+  background-color: hsl(158deg, 36%, 37%);
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 700;
+  border: none;
+  transition: background-color 0.5s;
+}
+section .box .about button:hover {
+  background-color: hsl(212deg, 21%, 14%);
+}
+
+@media (max-width: 991px) {
+  section .box {
+    width: 400px;
+    height: 600px;
+  }
+  section .box .img {
+    background-image: url(../images/image-product-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40%;
+    border-radius: 10px 10px 0px 0px;
+  }
+  section .box .about {
+    height: 60%;
+  }
+}
+@media (max-width: 450px) {
+  section .box {
+    width: 350px;
+  }
+  section .box .about h1 {
+    font-size: 2.8rem;
+  }
+}/*# sourceMappingURL=main.css.map */

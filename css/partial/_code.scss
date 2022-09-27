@@ -1,0 +1,85 @@
+section{
+    background-color: $Cream;
+    .box{
+        width: 650px;
+        height: 450px;
+        background-color: $White;
+        border-radius: 10px;
+        .img{
+            background-image: url(../images/image-product-desktop.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 10px 0px 0px 10px;
+        }
+        .about{
+            .logo{
+                font-size: 1.2rem;
+                letter-spacing: 0.8rem;
+                font-weight: $small;
+            }
+            h1{
+                font-size: 3.2rem;
+                font-family: $Fraunces;
+                font-weight: $large;
+            }
+            div{
+                div:first-child{
+                    color: $Dark_cyan;
+                    font-size: 3.2rem;
+                    font-family: $Fraunces;
+                    font-weight: $large;
+                }
+                div:last-child{
+                    color: $Dark_grayish_blue;
+                    font-family: $Fraunces;
+                    text-decoration: line-through;
+                }
+            }
+            button{
+                width: 100%;
+                font-size: 1.4rem;
+                background-color: $Dark_cyan;
+                color: $White;
+                font-weight: $large;
+                border: none;
+                transition: background-color 0.5s;
+            }
+            button:hover{
+                background-color: $Very_dark_blue;
+            }
+        }
+    }
+}
+
+@media(max-width: 991px){
+    section{
+        .box{
+            width: 400px;
+            height: 600px;
+            .img{
+                background-image: url(../images/image-product-mobile.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 40%;
+                border-radius: 10px 10px 0px 0px;
+            }
+            .about{
+                height: 60%;
+            }
+        }
+    }
+}
+
+@media(max-width: 450px){
+    section{
+        .box{
+            width: 350px;
+            .about{
+                h1{
+                    font-size: 2.8rem;
+                }
+            }
+        }
+    }
+}
+
